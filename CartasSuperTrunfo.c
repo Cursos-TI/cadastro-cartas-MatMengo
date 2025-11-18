@@ -27,7 +27,7 @@ int main() {
   printf("Digite a população: \n");
   scanf("%d", &populaçao);
 
-  printf("Digite a área em Km: \n");
+  printf("Digite a área em Km²: \n");
   scanf("%f", &area);
 
   printf("Digite o PIB: \n");
@@ -38,6 +38,13 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
-  
+  printf("Estado: %s\n", estado);
+  printf("Código da Carta: %s\n", codigo);
+  printf("Nome da Cidade: %s\n", cidade);
+  printf("População: %d\n", populaçao);
+  printf("Área em Km²: %f\n", area);
+  printf("PIB: %f\n", pib);
+  printf("Número de pontos turísticos: %d\n", pontos);
+
 return 0;
 } 
