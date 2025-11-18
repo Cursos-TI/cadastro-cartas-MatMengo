@@ -7,7 +7,7 @@
 int main() {
   
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado[10], codigo[3], cidade[20];
+  char estado[50], codigo[4], cidade[20];
   int populaçao, pontos;
   float area, pib;
 
@@ -15,22 +15,22 @@ int main() {
   printf("Digite o nome do Estado:\n");
   scanf(" %s", estado);
 
-  printf("Digite o código da carta: \n");
+  printf("Digite o código da carta:\n");
   scanf(" %s", codigo);
 
-  printf("Digite o nome da cidade: \n");
+  printf("Digite o nome da cidade:\n");
   scanf(" %s", cidade);
 
-  printf("Digite a população: \n");
+  printf("Digite a população:\n");
   scanf("%d", &populaçao);
 
-  printf("Digite a área em Km²: \n");
+  printf("Digite a área em Km²:\n");
   scanf("%f", &area);
 
-  printf("Digite o PIB: \n");
+  printf("Digite o PIB:\n");
   scanf("%f", &pib);
 
-  printf("Digite o nº de pontos turísticos: \n");
+  printf("Digite o nº de pontos turísticos:\n");
   scanf("%d", &pontos);
 
   // Área para exibição dos dados da cidade
