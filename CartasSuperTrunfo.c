@@ -5,7 +5,7 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-  char estado[1], codigo[3], nome[10];
+  char estado[10], codigo[3], nome[20];
   int populaçao, pontos;
   float area, pib;
  
