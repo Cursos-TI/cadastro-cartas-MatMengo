@@ -6,9 +6,6 @@
 
 int main() {
   
- 
-  printf("Cartas Super Trunfo\n");
-  
   // Área para definição das variáveis para armazenar as propriedades das cidades
   char estado[10], codigo[3], cidade[20];
   int populaçao, pontos;
@@ -16,13 +13,13 @@ int main() {
 
   // Área para entrada de dados
   printf("Digite o nome do Estado:\n");
-  scanf(" %s", &estado);
+  scanf(" %s", estado);
 
   printf("Digite o código da carta: \n");
-  scanf("%s", &codigo);
+  scanf(" %s", codigo);
 
   printf("Digite o nome da cidade: \n");
-  scanf("%s", &cidade);
+  scanf(" %s", cidade);
 
   printf("Digite a população: \n");
   scanf("%d", &populaçao);
@@ -38,7 +35,7 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
-  printf("Estado: %s \n", estado);
+  printf("Estado: %s\n", estado);
   printf("Código da Carta: %s\n", codigo);
   printf("Nome da Cidade: %s\n", cidade);
   printf("População: %d\n", populaçao);
