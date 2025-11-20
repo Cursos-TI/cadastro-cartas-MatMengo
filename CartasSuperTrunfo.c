@@ -11,12 +11,15 @@ int main() {
     //Carta 1
   char estado1[50], codigo1[4], cidade1[20];
   int populaçao1, pontos1;
-  float area1, pib1;
+  float area1, pib1, densidade1, superPoder1, pibPerCapta1;
+  
 
     //Carta 2
   char estado2[50], codigo2[4], cidade2[20];
   int populaçao2, pontos2;
-  float area2, pib2;
+  float area2, pib2, densidade2, superPoder2, pibPerCapta2;
+    
+
 
   // Área para entrada de dados
 
@@ -69,6 +72,16 @@ int main() {
   printf("Digite o nº de pontos turísticos:\n");
   scanf("%d", &pontos2);
 
+  densidade1 = populaçao1 / area1;
+  densidade2 = populaçao2 / area2;
+
+  pibPerCapta1 = pib1 / populaçao1;
+  pibPerCapta2 = pib2 / populaçao2;
+
+  superPoder1 = populaçao1 + area1 + pib1 + pontos1 + pibPerCapta1 - densidade1;
+  superPoder2 = populaçao2 + area2 + pib2 + pontos2 + pibPerCapta2 - densidade2;
+
+  
   // Área para exibição dos dados da cidade
     //CARTA 1
   
@@ -79,8 +92,9 @@ int main() {
   printf("Área: %.2f Km²\n", area1);
   printf("PIB: %.2f\n", pib1);
   printf("Número de pontos turísticos: %d\n", pontos1);
-  printf("Densidade populacional: %.2f hab/km²\n", (populaçao1 / area1));
-  printf("PIB per capta: %.2f reais\n", (pib1 / populaçao1));
+  printf("Densidade populacional: %.2f hab/km²\n", densidade1);
+  printf("PIB per capta: %.2f reais\n", pibPerCapta1);
+  printf("Superpoder: %.2f\n", superPoder1);
   
       //CARTA 2
   printf("Estado: %s\n", estado2);
@@ -90,8 +104,19 @@ int main() {
   printf("Área: %.2f Km²\n", area2);
   printf("PIB: %.2f\n", pib2);
   printf("Número de pontos turísticos: %d\n", pontos2);
-  printf("Densidade populacional: %.2f hab/km²\n", (populaçao2 / area2));
-  printf("PIB per capta: %.2f reais\n", (pib2 / populaçao2));
+  printf("Densidade populacional: %.2f hab/km²\n", densidade2);
+  printf("PIB per capta: %.2f reais\n", pibPerCapta2);
+  printf("Superpoder: %.2f\n", superPoder2);
+
+  //RESULTADO
+  printf("***RESULTADO****\n");
+  printf("População carta 1 é maior que carta 2? %d\n", populaçao1 > populaçao2);
+  printf("Área carta 1 é maior que carta 2? %d\n", area1 > area2);
+  printf("PIB carta 1 é maior que carta 2? %d\n", pib1 > pib2);
+  printf("Densidade carta 1 é melhor que carta 2? %d\n", densidade1 < densidade2);
+  printf("PIB per capta carta 1 é maior que carta 2? %d\n", pibPerCapta1 > pibPerCapta2);
+  printf("Superpoder carta 1 é maior que carta 2? %d\n", superPoder1 > superPoder2);
+
 
 
 return 0;
