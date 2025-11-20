@@ -70,21 +70,29 @@ int main() {
   scanf("%d", &pontos2);
 
   // Área para exibição dos dados da cidade
-
+    //CARTA 1
+  
   printf("Estado: %s\n", estado1);
   printf("Código da Carta: %s\n", codigo1);
   printf("Nome da Cidade: %s\n", cidade1);
   printf("População: %d\n", populaçao1);
-  printf("Área em Km²: %.2f\n", area1);
+  printf("Área: %.2f Km²\n", area1);
   printf("PIB: %.2f\n", pib1);
   printf("Número de pontos turísticos: %d\n", pontos1);
+  printf("Densidade populacional: %.2f hab/km²\n", (populaçao1 / area1));
+  printf("PIB per capta: %.2f reais\n", (pib1 / populaçao1));
   
+      //CARTA 2
   printf("Estado: %s\n", estado2);
   printf("Código da Carta: %s\n", codigo2);
   printf("Nome da Cidade: %s\n", cidade2);
   printf("População: %d\n", populaçao2);
-  printf("Área em Km²: %.2f\n", area2);
+  printf("Área: %.2f Km²\n", area2);
   printf("PIB: %.2f\n", pib2);
   printf("Número de pontos turísticos: %d\n", pontos2);
+  printf("Densidade populacional: %.2f hab/km²\n", (populaçao2 / area2));
+  printf("PIB per capta: %.2f reais\n", (pib2 / populaçao2));
+
+
 return 0;
 } 
